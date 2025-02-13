@@ -40,8 +40,8 @@ app.get('/puki', (req, res) => {
     res.send(`<h1>Hi Puki</h1>`)
 })
 
-app.get('/nono', (req, res) => {
-    res.redirect('/puki')
+app.get('/secret', (req, res) => {
+    res.send(process.env.SECRET1)
 })
 
 // fallback route
