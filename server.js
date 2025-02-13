@@ -41,7 +41,7 @@ app.get('/puki', (req, res) => {
 })
 
 app.get('/secret', (req, res) => {
-    res.send(process.env.SECRET1)
+    res.send(process.env.SECRET1 + '!!!!!!!!!!!!')
 })
 
 // fallback route
